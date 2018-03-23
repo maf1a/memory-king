@@ -17,14 +17,13 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     position: 'relative',
-    // borderBottomWidth: 1,
-    // borderBottomColor: '#ddd',
-    marginBottom: 10
+    elevation: 2,
+    marginTop: 25
   },
   textStyle: {
-    fontSize: 20,
+    fontSize: 25,
     padding: 10,
-    fontWeight: '600'
+    fontFamily: 'balsamiq-sans-regular'
   }
 }
 

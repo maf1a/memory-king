@@ -1,16 +1,12 @@
-import React from 'react';
-import { View, Text, Image } from 'react-native';
-import { logoText } from '../styles';
+import React, { Component } from 'react';
+import { Text, View, Image } from 'react-native';
+import { logoStyle } from '../styles';
 
-const Logo = () => {
-  return(
-    <View>
-      <Image
-        style={{alignSelf:'center', height: 150, width: 150}}
-        source={require('../assets/icons/idea.png')} />
-      <Text style={logoText}>Memory{'\n'}King</Text>
+export default Logo = () => {
+  return (
+    <View style={logoStyle.container}>
+      <Image style={logoStyle.image} source={require('../assets/icons/idea.png')} />
+      <Text style={logoStyle.text}>Memory{'\n'}King</Text>
     </View>
   )
 }
-
-export default Logo;

@@ -1,16 +1,13 @@
-import React from 'react';
-import { Text, View } from 'react-native';
+import React, { Component } from 'react';
+// import { View, Text } from 'react-native'
+import Routs from './router';
 
-import Loader from './screens/loader';
-import WelcomeScreen from './screens/welcome-screen';
-import LoginForm from './screens/login-form';
-
-export default class App extends React.Component {
+class Index extends Component {
   render() {
-    return (
-      <View style={{flex:1}}>
-        <LoginForm />
-      </View>
+    return(
+      <Routs />
     );
   }
 }
+
+export default Index;

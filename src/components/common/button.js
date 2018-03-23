@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, Dimensions } from 'react-native';
 
-const SCREEN_WIDTH = Dimensions.get('window').width
-
 const Button = ({ onPress, children }) => {
   return (
     <TouchableOpacity
@@ -16,20 +14,17 @@ const Button = ({ onPress, children }) => {
 const styles = {
   textStyle: {
     alignSelf: 'center',
-    color: '#007aaf',
-    fontSize: 21,
-    fontWeight: '600',
-    padding:15
+    fontSize: 25,
+    fontFamily: 'balsamiq-sans-regular',
+    padding:10
   },
   buttonStyle: {
-    width: SCREEN_WIDTH - 30,
+    width: null,
     alignSelf: 'stretch',
-    backgroundColor: '#fff',
-    borderRadius: 5,
-    borderWidth: 1,
-    borderColor: '#007aaf',
+    backgroundColor: '#ddd',
+    borderWidth: 2,
+    borderColor: 'black',
     marginVertical: 5,
-    marginHorizontal: 15
   }
 }
 

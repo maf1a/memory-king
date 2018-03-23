@@ -4,7 +4,7 @@ import { TextInput, View, Text, Dimensions } from  'react-native';
 const SCREEN_WIDTH = Dimensions.get('window').width
 
 const Input = ({ label, value, onchangeText, autocorrect,
-  placeholder, secureTextEntry }) => {
+  placeholder, secureTextEntry, style, autofocus }) => {
 
   const { inputStyle, containerStyle } = styles;
   return(
@@ -12,10 +12,12 @@ const Input = ({ label, value, onchangeText, autocorrect,
       <TextInput
         placeholder={placeholder}
         autocorrect={autocorrect}
-        style={inputStyle}
+        style={[inputStyle, style && style]}
         onChangeText={ onchangeText }
         value={value}
         secureTextEntry={secureTextEntry}
+        placeholderTextColor="#aaa"
+        autofocus={autofocus}
       />
     </View>
   );
@@ -23,11 +25,10 @@ const Input = ({ label, value, onchangeText, autocorrect,
 
 const styles = {
   inputStyle: {
-    width: SCREEN_WIDTH - 30,
-    fontSize: 21,
+    width: '100%',
+    fontSize: 25,
     padding: 15,
-    marginVertical: 5,
-    marginHorizontal: 15,
+    fontFamily:'balsamiq-sans-regular'
   },
   containerStyle: {
 

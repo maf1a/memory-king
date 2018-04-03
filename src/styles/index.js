@@ -281,4 +281,16 @@ export const routerStyle = {
   navigationBarStyle: {
     marginTop: 25
   }
+};
+
+export const errorText = {
+  container: {
+    marginTop: 20
+  },
+  text: {
+    fontSize: 20,
+    color: 'red',
+    marginLeft: 10,
+    fontFamily: 'balsamiq-sans-regular'
+  }
 }

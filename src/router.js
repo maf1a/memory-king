@@ -30,8 +30,8 @@ const Routs = () => {
         <Scene key="screenWelcome"
           component={Welcome}
           hideNavBar={true} />
-        <Scene key="screenNewUser" initial component={NewUser} title="New user" />
-        <Scene key="screenLogin" component={Login} title="Log in" />
+        <Scene key="screenNewUser" component={NewUser} title="New user" />
+        <Scene key="screenLogin" initial component={Login} title="Log in" />
         <Scene key="screenMain"
           panHandlers={null}
           component={Main}

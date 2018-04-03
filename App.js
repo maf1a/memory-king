@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import { View } from 'react-native'
-import Index from './src';
+import { View } from 'react-native';
+import Router from './src/router';
 import { Font } from 'expo';
+
+import { Provider } from  'react-redux';
+import store from './src/store';
 
 export default class App extends Component {
   state = {
@@ -20,9 +23,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <View style={{flex:1}}>
-        {this.state.fontLoaded && <Index />}
-      </View>
+      <Provider store={store}>
+        <View style={{flex:1}}>
+          {this.state.fontLoaded && <Router />}
+        </View>
+      </Provider>
     );
   }
 }

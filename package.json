@@ -20,12 +20,14 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "email-validator": "^1.1.1",
     "expo": "^25.0.0",
     "react": "16.2.0",
     "react-native": "0.52.0",
     "react-native-router-flux": "^4.0.0-beta.28",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0"
   }
 }

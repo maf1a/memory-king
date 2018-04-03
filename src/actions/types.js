@@ -1,0 +1,20 @@
+//new-user
+export const NEW_USER_FORM_CHANGED = 'NEW_USER_FORM_CHANGED';
+export const NAME_CHANGED = 'NAME_CHANGED';
+export const EMAIL_CHANGED = 'EMAIL_CHANGED';
+export const PASSWORDS_CHANGED = 'PASSWORDS_CHANGED';
+export const FORM_SUBMITTED = 'FORM_SUBMITTED';
+export const FORM_SUBMIT_ERROR = 'FORM_SUBMIT_ERROR';
+export const NEW_USER_CREATED = 'NEW_USER_CREATED';
+export const FETCHED_ERRORS = 'FETCHED_ERRORS';
+//-------> loginFormReducer
+export const USER_LOGGED_IN = 'USER_LOGGED_IN';
+export const SAVE_USER_ID = 'SAVE_USER_ID';
+
+//login
+export const LOGIN_FORM_CHANGE = 'LOGIN_FORM_CHANGE';
+export const LOGIN_FORM_SUBMITTED = 'LOGIN_FORM_SUBMITTED';
+export const LOGIN_FETCH_ERRORS = 'LOGIN_FETCH_ERRORS';
+export const LOGIN_FORM_SUBMIT_ERROR = 'LOGIN_FORM_SUBMIT_ERROR';
+export const CHECKING_LOGIN = 'CHECKING_LOGIN';
+//-------> loginFormReducer - USER_LOGGED_IN && SAVE_USER_ID

@@ -5,10 +5,10 @@ const ContainerDouble = ({ first, second, stylesFirst, stylesSecond }) => {
   return (
     <View style={styles.main}>
       <View style={[styles.first, stylesFirst && stylesFirst]}>
-        {first()}
+        {first}
       </View>
       <View style={[styles.second, stylesSecond && stylesSecond]}>
-        {second()}
+        {second}
       </View>
     </View>
   )
